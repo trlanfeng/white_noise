@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:white_noise/pages/settings.dart';
 import 'package:white_noise/pages/sound_current.dart';
 import 'package:white_noise/pages/sound_list.dart';
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: '白噪音',
       routes: {
         '/': (context) => SoundList(),
-        '/current': (content) => SoundCurrent(),
+        '/current': (context) => SoundCurrent(),
+        '/settings': (context) => Settings(),
       },
     );
   }
