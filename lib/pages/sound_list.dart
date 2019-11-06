@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:white_noise/components/round_button.dart';
 
 class SoundList extends StatefulWidget {
   @override
@@ -24,10 +25,10 @@ class SoundListState extends State<SoundList> {
         child: GridView.count(
           crossAxisCount: 3,
           children: <Widget>[
-            Container(
-              child: Image.asset('/assets/icons/png/ic_city_airplane_active.png'),
-              // Text('声音'),
-            ),
+            RoundButton(),
+            RoundButton(),
+            RoundButton(),
+            RoundButton(),
           ],
         ),
       ),
