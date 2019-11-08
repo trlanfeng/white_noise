@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:white_noise/components/grid_cell.dart';
 import 'package:white_noise/components/round_button.dart';
 
 class SoundList extends StatefulWidget {
@@ -25,10 +26,21 @@ class SoundListState extends State<SoundList> {
         child: GridView.count(
           crossAxisCount: 3,
           children: <Widget>[
-            RoundButton(),
-            RoundButton(),
-            RoundButton(),
-            RoundButton(),
+            GridCell(
+              child: RoundButton(),
+            ),
+            GridCell(
+              child: RoundButton(),
+            ),
+            GridCell(
+              child: RoundButton(),
+            ),
+            GridCell(
+              child: RoundButton(),
+            ),
+            GridCell(
+              child: RoundButton(),
+            ),
           ],
         ),
       ),
