@@ -1,8 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:white_noise/components/grid_cell.dart';
-import 'package:white_noise/components/round_button.dart';
+import 'package:white_noise/components/audio_button.dart';
 
 class SoundList extends StatefulWidget {
   @override
@@ -12,6 +15,21 @@ class SoundList extends StatefulWidget {
 }
 
 class SoundListState extends State<SoundList> {
+  Map audioMap = new Map();
+  getAudioData() async {
+    final json =
+        await DefaultAssetBundle.of(context).loadString('assets/audios.json');
+    setState(() {
+      audioMap = jsonDecode(json);
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getAudioData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -25,23 +43,15 @@ class SoundListState extends State<SoundList> {
       child: Container(
         child: GridView.count(
           crossAxisCount: 3,
-          children: <Widget>[
-            GridCell(
-              child: RoundButton(),
-            ),
-            GridCell(
-              child: RoundButton(),
-            ),
-            GridCell(
-              child: RoundButton(),
-            ),
-            GridCell(
-              child: RoundButton(),
-            ),
-            GridCell(
-              child: RoundButton(),
-            ),
-          ],
+          children: audioMap.keys.map((item) {
+            return GridCell(
+              child: AudioButton(
+                icon_normal: audioMap[item]['normal'],
+                icon_active: audioMap[item]['active'],
+                audio: audioMap[item]['audio'],
+              ),
+            );
+          }).toList(),
         ),
       ),
     );
