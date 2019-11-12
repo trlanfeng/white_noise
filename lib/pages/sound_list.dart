@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:white_noise/components/grid_cell.dart';
 import 'package:white_noise/components/audio_button.dart';
@@ -30,6 +29,56 @@ class SoundListState extends State<SoundList> {
     getAudioData();
   }
 
+  List<Widget> generateList(Map json) {
+    return json.values
+        .map(
+          (group) => Container(
+            child: Column(
+              children: generateGroup(group),
+            ),
+          ),
+        )
+        .toList();
+  }
+
+  List<Widget> generateGroup(Map group) {
+    final String title = group['title'];
+    final Map data = group['data'];
+    return [
+      Container(
+        alignment: Alignment.center,
+        child: Text(
+          title,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+          ),
+        ),
+      ),
+      Container(
+        child: Wrap(
+          children: data.keys
+              .map(
+                (audioName) => generateItem(data[audioName]),
+              )
+              .toList(),
+        ),
+      ),
+    ];
+  }
+
+  Widget generateItem(Map item) {
+    final String normal = item['normal'];
+    final String active = item['active'];
+    final String audio = item['audio'];
+    final String title = item['title'];
+    return AudioButton(
+      icon_normal: normal,
+      icon_active: active,
+      audio: audio,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -40,18 +89,12 @@ class SoundListState extends State<SoundList> {
           '声音',
         ),
       ),
-      child: Container(
-        child: GridView.count(
-          crossAxisCount: 3,
-          children: audioMap.keys.map((item) {
-            return GridCell(
-              child: AudioButton(
-                icon_normal: audioMap[item]['normal'],
-                icon_active: audioMap[item]['active'],
-                audio: audioMap[item]['audio'],
-              ),
-            );
-          }).toList(),
+      child: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: generateList(audioMap),
+          ),
         ),
       ),
     );

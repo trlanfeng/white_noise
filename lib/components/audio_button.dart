@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:white_noise/common/helper.dart';
 
 class AudioButton extends StatefulWidget {
   final String icon_normal;
@@ -31,11 +32,12 @@ class AudioButtonState extends State<AudioButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 60,
-      height: 60,
+      width: 80,
+      height: 80,
       decoration: BoxDecoration(
-        border: Border.all(width: 1, color: Colors.white),
+        // border: Border.all(width: 2, color: Colors.white),
         borderRadius: BorderRadius.all(Radius.circular(100)),
+        color: Helper.color('#1D1D1DFF'),
       ),
       child: CupertinoButton(
         onPressed: () {

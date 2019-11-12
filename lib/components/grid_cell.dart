@@ -16,7 +16,12 @@ class GridCellState extends State<GridCell> {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      child: widget.child,
+      child: Column(
+        children: <Widget>[
+          widget.child,
+          Container(child: Text('123'),)
+        ],
+      ),
     );
   }
 }

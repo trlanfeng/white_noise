@@ -1,1 +1,274 @@
-{"city_airplane":{"audio":"city_airplane.ogg","normal":"ic_city_airplane_normal.png","active":"ic_city_airplane_active.png"},"city_car":{"audio":"city_car.ogg","normal":"ic_city_car_normal.png","active":"ic_city_car_active.png"},"city_fan":{"audio":"city_fan.ogg","normal":"ic_city_fan_normal.png","active":"ic_city_fan_active.png"},"city_keyboard":{"audio":"city_keyboard.ogg","normal":"ic_city_keyboard_normal.png","active":"ic_city_keyboard_active.png"},"city_rails":{"audio":"city_rails.ogg","normal":"ic_city_rails_normal.png","active":"ic_city_rails_active.png"},"city_restaurant":{"audio":"city_restaurant.ogg","normal":"ic_city_restaurant_normal.png","active":"ic_city_restaurant_active.png"},"city_subway":{"audio":"city_subway.ogg","normal":"ic_city_subway_normal.png","active":"ic_city_subway_active.png"},"city_traffic":{"audio":"city_traffic.ogg","normal":"ic_city_traffic_normal.png","active":"ic_city_traffic_active.png"},"city_washing_machine":{"audio":"city_washing_machine.ogg","normal":"ic_city_washing_machine_normal.png","active":"ic_city_washing_machine_active.png"},"forest_birds":{"audio":"forest_birds.ogg","normal":"ic_forest_birds_normal.png","active":"ic_forest_birds_active.png"},"forest_creek":{"audio":"forest_creek.ogg","normal":"ic_forest_creek_normal.png","active":"ic_forest_creek_active.png"},"forest_fire":{"audio":"forest_fire.ogg","normal":"ic_forest_fire_normal.png","active":"ic_forest_fire_active.png"},"forest_forest":{"audio":"forest_forest.ogg","normal":"ic_forest_forest_normal.png","active":"ic_forest_forest_active.png"},"forest_frogs":{"audio":"forest_frogs.ogg","normal":"ic_forest_frogs_normal.png","active":"ic_forest_frogs_active.png"},"forest_grasshoppers":{"audio":"forest_grasshoppers.ogg","normal":"ic_forest_grasshoppers_normal.png","active":"ic_forest_grasshoppers_active.png"},"forest_leaves":{"audio":"forest_leaves.ogg","normal":"ic_forest_leaves_normal.png","active":"ic_forest_leaves_active.png"},"forest_waterfall":{"audio":"forest_waterfall.ogg","normal":"ic_forest_waterfall_normal.png","active":"ic_forest_waterfall_active.png"},"forest_wind":{"audio":"forest_wind.ogg","normal":"ic_forest_wind_normal.png","active":"ic_forest_wind_active.png"},"meditation_bells":{"audio":"meditation_bells.ogg","normal":"ic_meditation_bells_normal.png","active":"ic_meditation_bells_active.png"},"meditation_bowl":{"audio":"meditation_bowl.ogg","normal":"ic_meditation_bowl_normal.png","active":"ic_meditation_bowl_active.png"},"meditation_brown_noise":{"audio":"meditation_brown_noise.ogg","normal":"ic_meditation_brown_noise_normal.png","active":"ic_meditation_brown_noise_active.png"},"meditation_flute":{"audio":"meditation_flute.ogg","normal":"ic_meditation_flute_normal.png","active":"ic_meditation_flute_active.png"},"meditation_piano":{"audio":"meditation_piano.ogg","normal":"ic_meditation_piano_normal.png","active":"ic_meditation_piano_active.png"},"meditation_pink_noise":{"audio":"meditation_pink_noise.ogg","normal":"ic_meditation_pink_noise_normal.png","active":"ic_meditation_pink_noise_active.png"},"meditation_stones":{"audio":"meditation_stones.ogg","normal":"ic_meditation_stones_normal.png","active":"ic_meditation_stones_active.png"},"meditation_white_noise":{"audio":"meditation_white_noise.ogg","normal":"ic_meditation_white_noise_normal.png","active":"ic_meditation_white_noise_active.png"},"meditation_wind_chimes":{"audio":"meditation_wind_chimes.ogg","normal":"ic_meditation_wind_chimes_normal.png","active":"ic_meditation_wind_chimes_active.png"},"rain_light":{"audio":"rain_light.ogg","normal":"ic_rain_light_normal.png","active":"ic_rain_light_active.png"},"rain_normal":{"audio":"rain_normal.ogg","normal":"ic_rain_normal_normal.png","active":"ic_rain_normal_active.png"},"rain_ocean":{"audio":"rain_ocean.ogg","normal":"ic_rain_ocean_normal.png","active":"ic_rain_ocean_active.png"},"rain_on_leaves":{"audio":"rain_on_leaves.ogg","normal":"ic_rain_on_leaves_normal.png","active":"ic_rain_on_leaves_active.png"},"rain_on_roof":{"audio":"rain_on_roof.ogg","normal":"ic_rain_on_roof_normal.png","active":"ic_rain_on_roof_active.png"},"rain_on_window":{"audio":"rain_on_window.ogg","normal":"ic_rain_on_window_normal.png","active":"ic_rain_on_window_active.png"},"rain_thunders":{"audio":"rain_thunders.ogg","normal":"ic_rain_thunders_normal.png","active":"ic_rain_thunders_active.png"},"rain_under_umbrella":{"audio":"rain_under_umbrella.ogg","normal":"ic_rain_under_umbrella_normal.png","active":"ic_rain_under_umbrella_active.png"},"rain_water":{"audio":"rain_water.ogg","normal":"ic_rain_water_normal.png","active":"ic_rain_water_active.png"}}
+{
+  "city": {
+    "title": "城市",
+    "data": {
+      "city_airplane": {
+        "group": "城市",
+        "title": "飞机",
+        "audio": "city_airplane.ogg",
+        "normal": "ic_city_airplane_normal.png",
+        "active": "ic_city_airplane_active.png"
+      },
+      "city_car": {
+        "group": "城市",
+        "title": "汽车",
+        "audio": "city_car.ogg",
+        "normal": "ic_city_car_normal.png",
+        "active": "ic_city_car_active.png"
+      },
+      "city_fan": {
+        "group": "城市",
+        "title": "风扇",
+        "audio": "city_fan.ogg",
+        "normal": "ic_city_fan_normal.png",
+        "active": "ic_city_fan_active.png"
+      },
+      "city_keyboard": {
+        "group": "城市",
+        "title": "键盘",
+        "audio": "city_keyboard.ogg",
+        "normal": "ic_city_keyboard_normal.png",
+        "active": "ic_city_keyboard_active.png"
+      },
+      "city_rails": {
+        "group": "城市",
+        "title": "铁路",
+        "audio": "city_rails.ogg",
+        "normal": "ic_city_rails_normal.png",
+        "active": "ic_city_rails_active.png"
+      },
+      "city_restaurant": {
+        "group": "城市",
+        "title": "餐厅",
+        "audio": "city_restaurant.ogg",
+        "normal": "ic_city_restaurant_normal.png",
+        "active": "ic_city_restaurant_active.png"
+      },
+      "city_subway": {
+        "group": "城市",
+        "title": "地铁",
+        "audio": "city_subway.ogg",
+        "normal": "ic_city_subway_normal.png",
+        "active": "ic_city_subway_active.png"
+      },
+      "city_traffic": {
+        "group": "城市",
+        "title": "交通",
+        "audio": "city_traffic.ogg",
+        "normal": "ic_city_traffic_normal.png",
+        "active": "ic_city_traffic_active.png"
+      },
+      "city_washing_machine": {
+        "group": "城市",
+        "title": "洗衣机",
+        "audio": "city_washing_machine.ogg",
+        "normal": "ic_city_washing_machine_normal.png",
+        "active": "ic_city_washing_machine_active.png"
+      }
+    }
+  },
+  "forest": {
+    "title": "森林",
+    "data": {
+      "forest_birds": {
+        "group": "森林",
+        "title": "鸟",
+        "audio": "forest_birds.ogg",
+        "normal": "ic_forest_birds_normal.png",
+        "active": "ic_forest_birds_active.png"
+      },
+      "forest_creek": {
+        "group": "森林",
+        "title": "小溪",
+        "audio": "forest_creek.ogg",
+        "normal": "ic_forest_creek_normal.png",
+        "active": "ic_forest_creek_active.png"
+      },
+      "forest_fire": {
+        "group": "森林",
+        "title": "火",
+        "audio": "forest_fire.ogg",
+        "normal": "ic_forest_fire_normal.png",
+        "active": "ic_forest_fire_active.png"
+      },
+      "forest_forest": {
+        "group": "森林",
+        "title": "森林",
+        "audio": "forest_forest.ogg",
+        "normal": "ic_forest_forest_normal.png",
+        "active": "ic_forest_forest_active.png"
+      },
+      "forest_frogs": {
+        "group": "森林",
+        "title": "青蛙",
+        "audio": "forest_frogs.ogg",
+        "normal": "ic_forest_frogs_normal.png",
+        "active": "ic_forest_frogs_active.png"
+      },
+      "forest_grasshoppers": {
+        "group": "森林",
+        "title": "蚂蚱",
+        "audio": "forest_grasshoppers.ogg",
+        "normal": "ic_forest_grasshoppers_normal.png",
+        "active": "ic_forest_grasshoppers_active.png"
+      },
+      "forest_leaves": {
+        "group": "森林",
+        "title": "树叶",
+        "audio": "forest_leaves.ogg",
+        "normal": "ic_forest_leaves_normal.png",
+        "active": "ic_forest_leaves_active.png"
+      },
+      "forest_waterfall": {
+        "group": "森林",
+        "title": "瀑布",
+        "audio": "forest_waterfall.ogg",
+        "normal": "ic_forest_waterfall_normal.png",
+        "active": "ic_forest_waterfall_active.png"
+      },
+      "forest_wind": {
+        "group": "森林",
+        "title": "风",
+        "audio": "forest_wind.ogg",
+        "normal": "ic_forest_wind_normal.png",
+        "active": "ic_forest_wind_active.png"
+      }
+    }
+  },
+  "meditation": {
+    "title": "冥想",
+    "data": {
+      "meditation_bells": {
+        "group": "冥想",
+        "title": "鸟",
+        "audio": "meditation_bells.ogg",
+        "normal": "ic_meditation_bells_normal.png",
+        "active": "ic_meditation_bells_active.png"
+      },
+      "meditation_bowl": {
+        "group": "冥想",
+        "title": "碗",
+        "audio": "meditation_bowl.ogg",
+        "normal": "ic_meditation_bowl_normal.png",
+        "active": "ic_meditation_bowl_active.png"
+      },
+      "meditation_brown_noise": {
+        "group": "冥想",
+        "title": "棕噪音",
+        "audio": "meditation_brown_noise.ogg",
+        "normal": "ic_meditation_brown_noise_normal.png",
+        "active": "ic_meditation_brown_noise_active.png"
+      },
+      "meditation_flute": {
+        "group": "冥想",
+        "title": "长笛",
+        "audio": "meditation_flute.ogg",
+        "normal": "ic_meditation_flute_normal.png",
+        "active": "ic_meditation_flute_active.png"
+      },
+      "meditation_piano": {
+        "group": "冥想",
+        "title": "钢琴",
+        "audio": "meditation_piano.ogg",
+        "normal": "ic_meditation_piano_normal.png",
+        "active": "ic_meditation_piano_active.png"
+      },
+      "meditation_pink_noise": {
+        "group": "冥想",
+        "title": "粉噪音",
+        "audio": "meditation_pink_noise.ogg",
+        "normal": "ic_meditation_pink_noise_normal.png",
+        "active": "ic_meditation_pink_noise_active.png"
+      },
+      "meditation_stones": {
+        "group": "冥想",
+        "title": "石头",
+        "audio": "meditation_stones.ogg",
+        "normal": "ic_meditation_stones_normal.png",
+        "active": "ic_meditation_stones_active.png"
+      },
+      "meditation_white_noise": {
+        "group": "冥想",
+        "title": "白噪音",
+        "audio": "meditation_white_noise.ogg",
+        "normal": "ic_meditation_white_noise_normal.png",
+        "active": "ic_meditation_white_noise_active.png"
+      },
+      "meditation_wind_chimes": {
+        "group": "冥想",
+        "title": "风铃",
+        "audio": "meditation_wind_chimes.ogg",
+        "normal": "ic_meditation_wind_chimes_normal.png",
+        "active": "ic_meditation_wind_chimes_active.png"
+      }
+    }
+  },
+  "rain": {
+    "title": "雨",
+    "data": {
+      "rain_light": {
+        "group": "雨",
+        "title": "小雨",
+        "audio": "rain_light.ogg",
+        "normal": "ic_rain_light_normal.png",
+        "active": "ic_rain_light_active.png"
+      },
+      "rain_normal": {
+        "group": "雨",
+        "title": "雨",
+        "audio": "rain_normal.ogg",
+        "normal": "ic_rain_normal_normal.png",
+        "active": "ic_rain_normal_active.png"
+      },
+      "rain_ocean": {
+        "group": "雨",
+        "title": "海",
+        "audio": "rain_ocean.ogg",
+        "normal": "ic_rain_ocean_normal.png",
+        "active": "ic_rain_ocean_active.png"
+      },
+      "rain_on_leaves": {
+        "group": "雨",
+        "title": "雨打树叶",
+        "audio": "rain_on_leaves.ogg",
+        "normal": "ic_rain_on_leaves_normal.png",
+        "active": "ic_rain_on_leaves_active.png"
+      },
+      "rain_on_roof": {
+        "group": "雨",
+        "title": "雨打屋顶",
+        "audio": "rain_on_roof.ogg",
+        "normal": "ic_rain_on_roof_normal.png",
+        "active": "ic_rain_on_roof_active.png"
+      },
+      "rain_on_window": {
+        "group": "雨",
+        "title": "雨打窗户",
+        "audio": "rain_on_window.ogg",
+        "normal": "ic_rain_on_window_normal.png",
+        "active": "ic_rain_on_window_active.png"
+      },
+      "rain_thunders": {
+        "group": "雨",
+        "title": "闪电",
+        "audio": "rain_thunders.ogg",
+        "normal": "ic_rain_thunders_normal.png",
+        "active": "ic_rain_thunders_active.png"
+      },
+      "rain_under_umbrella": {
+        "group": "雨",
+        "title": "雨伞",
+        "audio": "rain_under_umbrella.ogg",
+        "normal": "ic_rain_under_umbrella_normal.png",
+        "active": "ic_rain_under_umbrella_active.png"
+      },
+      "rain_water": {
+        "group": "雨",
+        "title": "水",
+        "audio": "rain_water.ogg",
+        "normal": "ic_rain_water_normal.png",
+        "active": "ic_rain_water_active.png"
+      }
+    }
+  }
+}
