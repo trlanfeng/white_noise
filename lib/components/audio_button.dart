@@ -1,7 +1,9 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:white_noise/common/helper.dart';
+import 'package:white_noise/components/audio_manager.dart';
 
 class AudioButton extends StatefulWidget {
   final String icon_normal;
@@ -54,6 +56,11 @@ class AudioButtonState extends State<AudioButton> {
             icon = active ? widget.icon_active : widget.icon_normal;
             border = active ? borderActive : borderNormal;
             background = active ? backgroundActive : backgroundNormal;
+            if (active) {
+              AudioManager().enablePlayer(widget.audio);
+            } else {
+              AudioManager().disablePlayer(widget.audio);
+            }
           });
         },
         child: icon != ''
