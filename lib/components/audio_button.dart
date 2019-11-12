@@ -20,6 +20,14 @@ class AudioButton extends StatefulWidget {
 
 class AudioButtonState extends State<AudioButton> {
   String icon = '';
+  bool active = false;
+  BoxBorder borderNormal = Border.all(width: 0);
+  BoxBorder borderActive =
+      Border.all(width: 3, color: Helper.color('#A3A3A3FF'));
+  BoxBorder border = Border.all(width: 0);
+  Color background = Helper.color('#1D1D1DFF');
+  Color backgroundNormal = Helper.color('#1D1D1DFF');
+  Color backgroundActive = Colors.white;
 
   @override
   void initState() {
@@ -32,19 +40,20 @@ class AudioButtonState extends State<AudioButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 80,
-      height: 80,
+      width: 66,
+      height: 66,
       decoration: BoxDecoration(
-        // border: Border.all(width: 2, color: Colors.white),
+        border: border,
         borderRadius: BorderRadius.all(Radius.circular(100)),
-        color: Helper.color('#1D1D1DFF'),
+        color: background,
       ),
       child: CupertinoButton(
         onPressed: () {
           setState(() {
-            icon = icon != widget.icon_normal
-                ? widget.icon_normal
-                : widget.icon_active;
+            active = !active;
+            icon = active ? widget.icon_active : widget.icon_normal;
+            border = active ? borderActive : borderNormal;
+            background = active ? backgroundActive : backgroundNormal;
           });
         },
         child: icon != ''

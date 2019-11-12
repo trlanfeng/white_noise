@@ -15,6 +15,7 @@ class SoundList extends StatefulWidget {
 
 class SoundListState extends State<SoundList> {
   Map audioMap = new Map();
+
   getAudioData() async {
     final json =
         await DefaultAssetBundle.of(context).loadString('assets/audios.json');
@@ -29,6 +30,9 @@ class SoundListState extends State<SoundList> {
     getAudioData();
   }
 
+  /// 生成组列表
+  ///
+  /// `json` 声音JSON配置文件
   List<Widget> generateList(Map json) {
     return json.values
         .map(
@@ -41,11 +45,13 @@ class SoundListState extends State<SoundList> {
         .toList();
   }
 
+  /// 生成组内容，包括标题和内容列表
   List<Widget> generateGroup(Map group) {
     final String title = group['title'];
     final Map data = group['data'];
     return [
       Container(
+        margin: EdgeInsets.symmetric(vertical: 10),
         alignment: Alignment.center,
         child: Text(
           title,
@@ -67,15 +73,33 @@ class SoundListState extends State<SoundList> {
     ];
   }
 
+  /// 生成单个按钮
   Widget generateItem(Map item) {
     final String normal = item['normal'];
     final String active = item['active'];
     final String audio = item['audio'];
     final String title = item['title'];
-    return AudioButton(
-      icon_normal: normal,
-      icon_active: active,
-      audio: audio,
+    return Container(
+      margin: EdgeInsets.all(10),
+      child: Column(
+        children: <Widget>[
+          AudioButton(
+            icon_normal: normal,
+            icon_active: active,
+            audio: audio,
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 5),
+            child: Text(
+              title,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -91,7 +115,6 @@ class SoundListState extends State<SoundList> {
       ),
       child: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(20),
           child: Column(
             children: generateList(audioMap),
           ),
