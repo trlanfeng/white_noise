@@ -140,7 +140,7 @@
     "data": {
       "meditation_bells": {
         "group": "冥想",
-        "title": "鸟",
+        "title": "铃铛",
         "audio": "meditation_bells.ogg",
         "normal": "ic_meditation_bells_normal.png",
         "active": "ic_meditation_bells_active.png"
