@@ -1,4 +1,4 @@
-package com.example.white_noise
+package name.fengyu.white_noise
 
 import android.os.Bundle
 
